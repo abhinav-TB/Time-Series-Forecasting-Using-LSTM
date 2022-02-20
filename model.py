@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 
-
 class Lstm_model(nn.Module):
     def __init__(self, input_dim , hidden_size , num_layers ,batch_size):
         super(Lstm_model, self).__init__()

@@ -4,7 +4,6 @@ from torch.utils.data import Dataset , DataLoader
 import pandas as pd
 import numpy as np
 from sklearn.preprocessing import MinMaxScaler
-import math
 from utils import StockDataset,train_loop,test_loop,calculate_metrics
 from model import Lstm_model
 
