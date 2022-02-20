@@ -3,11 +3,12 @@ import torch.nn as nn
 
 
 class Lstm_model(nn.Module):
-    def __init__(self, input_dim , hidden_size , num_layers):
+    def __init__(self, input_dim , hidden_size , num_layers ,batch_size):
         super(Lstm_model, self).__init__()
         self.num_layers = num_layers
         self.input_size = input_dim
         self.hidden_size = hidden_size
+        self.batch_size = batch_size
         self.lstm = nn.LSTM(input_size=input_dim , hidden_size = hidden_size , num_layers= num_layers )
         self.fc = nn.Linear(hidden_size,1)
 
@@ -23,6 +24,6 @@ class Lstm_model(nn.Module):
         return final_out
 
     def init(self):
-        h0 =  torch.zeros(self.num_layers , batch_size , self.hidden_size).to(device)
-        c0 =  torch.zeros(self.num_layers , batch_size , self.hidden_size).to(device)
+        h0 =  torch.zeros(self.num_layers , self.batch_size , self.hidden_size)
+        c0 =  torch.zeros(self.num_layers , self.batch_size , self.hidden_size)
         return h0 , c0
