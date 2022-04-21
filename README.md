@@ -1,4 +1,4 @@
-# Time-Series-Forecasting-Uisng-LSTM
+# Time-Series-Forecasting-Using-LSTM
 
 ## Prerequisite
 
