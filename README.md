@@ -1,4 +1,5 @@
 # Time-Series-Forecasting-Using-LSTM
+If you like this project, please consider giving it a ⭐!
 
 ## Prerequisite
 
@@ -32,3 +33,5 @@ Contributions are what makes the open source community such an amazing place to 
 ##  License
 
 Distributed under the MIT License. See `LICENSE` for more information.
+
+"If you like this project, please consider giving it a ⭐!"
